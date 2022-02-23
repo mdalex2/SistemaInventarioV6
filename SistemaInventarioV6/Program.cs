@@ -43,7 +43,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{area=Home}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Inventario}/{controller=Home}/{action=Index}/{id?}");
 
 //app.MapControllerRoute(
 //    name: "default",
