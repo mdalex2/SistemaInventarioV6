@@ -20,14 +20,14 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
 
         }
 
-        public void Guardar()
+        public async Task Guardar()
         {
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
         }
-
-        public void Dispose()
+        
+        public async ValueTask DisposeAsync()
         {
-            _db.Dispose();
+            await _db.DisposeAsync();
         }
     }
 }

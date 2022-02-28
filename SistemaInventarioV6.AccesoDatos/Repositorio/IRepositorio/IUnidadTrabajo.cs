@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
 {
-    public interface IUnidadTrabajo :IDisposable
+    public interface IUnidadTrabajo : IAsyncDisposable
     {
         IBodegaRepositorio Bodega { get; }
     }

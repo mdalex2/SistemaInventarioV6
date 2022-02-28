@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "SistemaInventarioV6.Utilidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SistemaInventarioV6.Utilidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaInventarioV6.Utilidades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SistemaInventarioV6.Utilidades/1.0.0": {
+      "type": "project",
+      "path": "../SistemaInventarioV6.Utilidades/SistemaInventarioV6.Utilidades.csproj",
+      "msbuildProject": "../SistemaInventarioV6.Utilidades/SistemaInventarioV6.Utilidades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "SistemaInventarioV6.Utilidades >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Alexi\\.nuget\\packages\\": {},
@@ -43,7 +62,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+              "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

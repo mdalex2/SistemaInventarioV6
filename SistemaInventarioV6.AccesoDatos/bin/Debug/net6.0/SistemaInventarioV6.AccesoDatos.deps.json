@@ -518,6 +518,9 @@
         }
       },
       "SistemaInventarioV6.Modelos/1.0.0": {
+        "dependencies": {
+          "SistemaInventarioV6.Utilidades": "1.0.0"
+        },
         "runtime": {
           "SistemaInventarioV6.Modelos.dll": {}
         }

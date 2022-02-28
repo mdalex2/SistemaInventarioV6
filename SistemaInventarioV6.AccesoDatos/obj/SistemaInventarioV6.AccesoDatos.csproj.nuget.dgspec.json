@@ -116,7 +116,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

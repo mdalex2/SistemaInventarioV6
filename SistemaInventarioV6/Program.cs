@@ -3,12 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using SistemaInventarioV6.AccesoDatos.Data;
 using SistemaInventarioV6.AccesoDatos.Repositorio;
 using SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio;
+using SistemaInventarioV6.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<SysDBContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -32,7 +35,7 @@ else
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
+app.UseWebSockets();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

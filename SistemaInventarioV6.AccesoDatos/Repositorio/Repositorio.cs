@@ -21,39 +21,17 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
             this.dbSet = _db.Set<T>();
         }
 
-        public void Agregar(T entidad)
+        public async Task Agregar(T entity)
         {
-            dbSet.Add(entidad);      // insert into  Table
+            await dbSet.AddAsync(entity);      // insert into  Table
         }
 
-        public T Obtener(int id)
+        public async Task<T> Obtener(int id)
         {
-            return dbSet.Find(id);    // select * from 
+            return await dbSet.FindAsync(id);    // select * from 
         }
 
-        public T ObtenerPrimero(Expression<Func<T, bool>> filter = null, string incluirPropiedades = null)
-        {
-
-            IQueryable<T> query = dbSet;
-
-            if (filter != null)
-            {
-                query = query.Where(filter);   // select * from where ...
-            }
-
-            if (incluirPropiedades != null)
-            {
-                foreach (var incluirProp in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    query = query.Include(incluirProp);
-                }
-            }
-
-            return query.FirstOrDefault();
-
-        }
-
-        public IEnumerable<T> ObtenerTodos(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null)
+        public async Task<IEnumerable<T>> ObtenerTodos(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null)
         {
             IQueryable<T> query = dbSet;
 
@@ -72,27 +50,48 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
 
             if (orderBy != null)
             {
-                return orderBy(query).ToList();
+                return await orderBy(query).ToListAsync();
             }
 
-            return query.ToList();
-
+            return await query.ToListAsync();
         }
 
-        public void Remover(int id)
+        public async Task<T> ObtenerPrimero(Expression<Func<T, bool>> filter = null, string incluirPropiedades = null)
         {
-            T entidad = dbSet.Find(id);
-            Remover(entidad);
+            IQueryable<T> query = dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);   // select * from where ...
+            }
+
+            if (incluirPropiedades != null)
+            {
+                foreach (var incluirProp in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(incluirProp);
+                }
+            }
+
+            return await query.FirstOrDefaultAsync();
         }
 
-        public void Remover(T entidad)
+
+
+        public async Task Remover(int id)
         {
-            dbSet.Remove(entidad);    // delete from 
+            T entity = await dbSet.FindAsync(id);
+            Remover(entity);
         }
 
-        public void RemoverRango(IEnumerable<T> entidad)
+        public void Remover(T entity)
         {
-            dbSet.RemoveRange(entidad);
+            dbSet.Remove(entity);    // delete from 
+        }
+
+        public void RemoverRango(IEnumerable<T> entity)
+        {
+            dbSet.RemoveRange(entity);
         }
     }
 }
