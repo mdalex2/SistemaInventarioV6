@@ -15,26 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodega/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
