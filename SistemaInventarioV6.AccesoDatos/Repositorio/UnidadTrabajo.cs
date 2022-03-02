@@ -18,16 +18,16 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
             _db = db;
             Bodega = new BodegaRepositorio(_db); // Inicializamos
 
-        }
+        }                
 
         public async Task Guardar()
         {
             await _db.SaveChangesAsync();
         }
-        
+
         public async ValueTask DisposeAsync()
         {
-            await _db.DisposeAsync();
+            await _db.DisposeAsync();            
         }
     }
 }

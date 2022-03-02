@@ -1,11 +1,5 @@
-﻿@*
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}*@
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
+﻿    
+<div class="content-header row">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
@@ -14,7 +8,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">                        
                         <li class="breadcrumb-item active">
-                            <a class="btn btn-primary"><i class="fas fa-plus"></i> Agregar</a>
+                            <a asp-action="Upsert" class="btn btn-primary"><i class="fas fa-plus"></i> Agregar</a>
                         </li>
                     </ol>
                 </div><!-- /.col -->
@@ -22,15 +16,10 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-    <!-- Main content -->
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">    
-    
-    <br />
+
     <div class="p-4 border rounded" style="width:100%;">
-        <table id="tblDatos" class="table table-hover text-nowrap">
-            <thead>
+        <table id="tblDatos" class="table table-responsive- table-hover text-nowrap" style="width:100%">
+            <thead class="bg-gradient-gray-dark text-white">
                 <tr>
                     <th>Nombre</th>
                     <th>Descripción</th>
@@ -38,17 +27,10 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody class="bg-white"></tbody>
         </table>
+    </div>
 
-    </div>
-</div>
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
 
 @section Scripts{
     <script src="~/js/bodega.js"></script>

@@ -26,7 +26,17 @@
         <partial name="_Preloader" />
         <partial name="_Navbar" />
         <partial name="_MainSidebar" />
-        @RenderBody()
+        
+        <div class="content-wrapper" style="min-height: 600px;">
+            <!-- Main content -->
+            <section class="content">
+              <div class="container-fluid">
+                     @RenderBody()
+              </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+       
         <partial name="_ControlSidebar" />
         <partial name="_Footer" />
     </div>

@@ -1,4 +1,5 @@
-﻿using SistemaInventarioV6.AccesoDatos.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaInventarioV6.AccesoDatos.Data;
 using SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio;
 using SistemaInventarioV6.Modelos;
 using System;
@@ -18,16 +19,14 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
             _db = db;
         }
 
-        public void Actualizar(Bodega bodega)
+        public async Task Actualizar(Bodega bodega)
         {
-            var bodegaDb = _db.Bodegas.FirstOrDefault(b => b.Id == bodega.Id);
+            var bodegaDb = await _db.Bodegas.FirstOrDefaultAsync(b => b.Id == bodega.Id);
             if (bodegaDb != null)
             {
                 bodegaDb.Nombre = bodega.Nombre;
                 bodegaDb.Descripcion = bodega.Descripcion;
-                bodega.Estado = bodega.Estado;
-
-                _db.SaveChanges();
+                bodegaDb.Estado = bodega.Estado;
             }
         }
     }

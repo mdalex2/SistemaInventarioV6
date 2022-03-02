@@ -15,8 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodegas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodega/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/Bodega/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9kZWdhXFVwc2VydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Areas/Admin/Views/_ViewImports.cshtml]
@@ -51,12 +75,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_BotonesActualizarRegresar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb3RvbmVzQWN0dWFsaXphclJlZ3Jlc2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_BotonesCrearRegresar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb3RvbmVzQ3JlYXJSZWdyZXNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_ControlSidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250cm9sU2lkZWJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_LoginPartial.cshtml]
@@ -86,7 +122,3 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alexi/source/repos/SistemaInventarioV6/SistemaInventarioV6/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-doukldbful
