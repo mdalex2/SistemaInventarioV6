@@ -8,6 +8,9 @@ function loadDataTable() {
         "ajax": {
             "url": "/Admin/Bodega/ObtenerTodos"
         },
+        "language": {
+            "url": "/lib/AdminLTE-3.2.0/plugins/datatables/es_es.json"
+        },
         "columns": [
             { "data": "nombre", "width": "20%" },
             { "data": "descripcion", "width": "40%" },
@@ -25,11 +28,38 @@ function loadDataTable() {
                     return `
                         <div class="text-center">
                             <a href="/Admin/Bodega/Upsert/${data}" class="btn bg-gradient btn-primary text-white"><i class="fas fa-edit"></i></a>
-                            <a href="Admin/Bodega/Delete/${data}" class="btn bg-gradient btn-danger text-white"><i class="fas fa-trash-alt"></i></a>
+                            <a href="#" onclick=Delete("/Admin/Bodega/Delete/${data}") class="btn bg-gradient btn-danger text-white"><i class="fas fa-trash-alt"></i></a>
                         </div>
                     `;
                 }, "width": "20%"
             }
         ]
+    });
+}
+
+function Delete(url) {
+    new swal({
+        title: "¿Desea eliminar la bodega?",
+        text: "Este registro no se podrá recuperar",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: 'Borrar',
+        cancelButtonText: 'Cancelar',
+        dangermode: true
+    }).then((borrar) => {
+        if (borrar) {
+            $.ajax({
+                type: "DELETE",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        dataTable.ajax.reload();
+                    } else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+        }
     });
 }
