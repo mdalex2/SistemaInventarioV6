@@ -9,6 +9,8 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
     public interface IUnidadTrabajo : IAsyncDisposable
     {
         IBodegaRepositorio Bodega { get; }
+        ICategoriaRepositorio Categoria { get; }
+        IMarcaRepositorio Marca { get; }
         Task Guardar();
     }
 }

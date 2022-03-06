@@ -1,0 +1,66 @@
+﻿
+@model SistemaInventarioV6.Modelos.Marca
+@{
+    string titulo = Model.Id != 0? "Actualizar Marca" : "Crear Marca";
+
+}    <!-- Main content -->
+    <section class="content">
+    <div class="container-fluid">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+        <!-- jquery validation -->
+        <div class="card card-primary">
+            <div class="card-header">
+            <h3 class="card-title">@titulo</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form method="post" asp-action="Upsert">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card-body">                
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Nombre"></label>
+                        <input asp-for="Nombre" class="form-control">
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Estado"></label>
+                        <select asp-for="Estado" class="form-control">
+                            <option value=true>Activo</option>
+                            <option value=false>Inactivo</option>
+                        </select>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                @if (Model.Id != 0)
+                {
+                    <partial name="_BotonesActualizarRegresar" model="Model.Id"></partial>
+                } else {
+                    <partial name="_BotonesCrearRegresar"></partial>
+                }
+            </div>
+            </form>
+        </div>
+        <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+
+        </div>
+        <!--/.col (right) -->
+    </div>
+    <!-- /.row -->
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
