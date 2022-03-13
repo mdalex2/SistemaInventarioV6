@@ -34,20 +34,20 @@ namespace SistemaInventarioV6.Modelos
         public double Costo { get; set; }
 
         [Display(Name = "Imagen del producto")]
-        public string ImagenUrl { get; set; }
+        public string? ImagenUrl { get; set; }
 
         [Required]
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
-        public Categoria Categoria { get; set; }
+        public Categoria? Categoria { get; set; }
 
         [Required]
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
-        public Marca Marca { get; set; }
+        public Marca? Marca { get; set; }
 
         //recursividad
         public int? PadreId { get; set; }
-        public virtual Producto Padre { get; set; }
+        public virtual Producto? Padre { get; set; }
     }
 }

@@ -565,3 +565,5 @@ C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\obj\Debug\ne
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\obj\Debug\net6.0\SistemaInventarioV6.pdb
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\obj\Debug\net6.0\SistemaInventarioV6.genruntimeconfig.cache
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\obj\Debug\net6.0\ref\SistemaInventarioV6.dll
+C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

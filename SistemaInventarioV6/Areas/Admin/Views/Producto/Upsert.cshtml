@@ -1,0 +1,122 @@
+﻿
+@model SistemaInventarioV6.Modelos.ViewModels.ProductoVM
+@{
+    string titulo = Model.Producto.Id != 0? "Actualizar Producto" : "Crear Producto";
+
+}    <!-- Main content -->
+    <section class="content">
+    <div class="container-fluid">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+        <!-- jquery validation -->
+        <div class="card card-primary">
+            <div class="card-header">
+            <h3 class="card-title">@titulo</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form method="post" enctype="multipart/form-data">
+            @if (Model.Producto.Id != 0)
+            {
+                <input type="hidden" asp-for="Producto.Id" />
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card-body">   
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Producto.NumeroSerie"></label>
+                        <input asp-for="Producto.NumeroSerie" class="form-control">
+                        <span asp-validation-for="Producto.NumeroSerie" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Producto.Descripcion"></label>
+                        <input asp-for="Producto.Descripcion" class="form-control">
+                        <span asp-validation-for="Producto.Descripcion" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Producto.Precio"></label>
+                        <input asp-for="Producto.Precio" class="form-control">
+                        <span asp-validation-for="Producto.Precio" class="text-danger"></span>
+                    </div>
+                </div>Costo
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label asp-for="Producto.Costo"></label>
+                        <input asp-for="Producto.Costo" class="form-control">
+                        <span asp-validation-for="Producto.Costo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label>Categoria</label>
+                        @Html.DropDownListFor(c => c.Producto.CategoriaId,Model.CategoriaLista,"Seleccione...",
+                            new{@class = "form-control"})
+                        <span asp-validation-for="Producto.CategoriaId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label>Marca</label>
+                        @Html.DropDownListFor(m => m.Producto.MarcaId,Model.MarcaLista,"Seleccione...",
+                            new{@class = "form-control"})
+                        <span asp-validation-for="Producto.MarcaId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label>Imagen</label>
+                        <input type="file" name="files" id="escogerImg" class="form-control" multiple/>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                @if (Model.Producto.Id != 0)
+                {
+                    <partial name="_BotonesActualizarRegresar" model="Model.Producto.Id"></partial>
+                } else {
+                   
+                    <div class="row">
+                        <button type="submit" onclick="return validarEntrada()" class="btn btn-primary mr-lg-2"><i class="fas fa-plus"></i> Crear</button>
+                        <a asp-action="Index" type="button" class="btn btn-success"><i class="fas fa-arrow-circle-left"></i> Regresar</a>
+                    </div>
+                }
+            </div>
+            </form>
+        </div>
+        <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+
+        </div>
+        <!--/.col (right) -->
+    </div>
+    <!-- /.row -->
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script type="text/javascript">
+        function validarEntrada()
+        {
+            debugger;
+            if (document.getElementById("escogerImg").value == "")
+            {
+                new swal("Error","Seleccione una imagen","Error");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+}

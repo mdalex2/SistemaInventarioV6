@@ -310,7 +310,6 @@ namespace SistemaInventarioV6.AccesoDatos.Migrations
                         .HasColumnType("nvarchar(60)");
 
                     b.Property<string>("ImagenUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MarcaId")
