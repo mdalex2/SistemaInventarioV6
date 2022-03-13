@@ -45,8 +45,8 @@ function Delete(url) {
         confirmButtonText: 'Borrar',
         cancelButtonText: 'Cancelar',
         dangermode: true
-    }).then((borrar.isConfirmed) => {
-        if (borrar) {
+    }).then((borrar) => {
+        if (borrar.isConfirmed) {
             $.ajax({
                 type: "DELETE",
                 url: url,

@@ -1,14 +1,15 @@
-﻿    <!-- Content Header (Page header) -->
+﻿@model IEnumerable<SistemaInventarioV6.Modelos.Producto>
+<!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Productos</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">Productos</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -24,11 +25,24 @@
         </div>
         <!-- /.row -->
         <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          <!-- right col -->
+        <div class="row cols-2">
+        @foreach (var producto in Model)
+        {
+          <div class="col-md-3 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="@producto.ImagenUrl" class="card-img img-fluid" style="width:100%;" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">@producto.Descripcion</a> </h6> <a href="#" class="text-muted" data-abc="true">@producto.Categoria.Nombre</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$@producto.Precio</h3>
+                    <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        }
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->

@@ -73,7 +73,22 @@
                         <input type="file" name="files" id="escogerImg" class="form-control" multiple/>
                     </div>
                 </div>
-
+                <div class="col-md-4 col-sm-12 row">
+                    <div class="form-group row">
+                        <label>Padre</label>
+                        @Html.DropDownListFor(m => m.Producto.PadreId,Model.PadreLista,"Seleccione...",
+                            new{@class = "form-control"})
+                    </div>
+                </div>
+                @if(Model.Producto.Id != 0)
+                {
+                    <div class="col-md-4 col-sm-12 row">
+                        <div class="form-group row" >
+                            <img src="@Model.Producto.ImagenUrl" style="width:100px;border-radius:5px;border: 1px solid #bbb9b9">
+                        </div>
+                    </div>
+                }
+                                
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
@@ -87,7 +102,7 @@
                         <a asp-action="Index" type="button" class="btn btn-success"><i class="fas fa-arrow-circle-left"></i> Regresar</a>
                     </div>
                 }
-            </div>
+            </div>            
             </form>
         </div>
         <!-- /.card -->
