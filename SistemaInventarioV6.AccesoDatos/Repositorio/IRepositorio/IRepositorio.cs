@@ -26,9 +26,9 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
 
         Task Remover(int id);
 
-        void Remover(T entity);
+        Task Remover(T entity);
 
-        void RemoverRango(IEnumerable<T> entity);
+        Task RemoverRango(IEnumerable<T> entity);
     }
 
 }

@@ -84,12 +84,12 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio
             Remover(entity);
         }
 
-        public void Remover(T entity)
+        public async Task Remover(T entity)
         {
             dbSet.Remove(entity);    // delete from 
         }
 
-        public void RemoverRango(IEnumerable<T> entity)
+        public async Task RemoverRango(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
         }

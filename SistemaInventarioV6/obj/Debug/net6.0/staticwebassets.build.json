@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k0C/tOhyXqyKEt6gXvCnFyXs+fg/EBWpbOue6iasQpM=",
+  "Hash": "hlpRYljSwsTr3UGfZ7DL62Z6CFQUqJkNhn6ZMppTlEY=",
   "Source": "SistemaInventarioV6",
   "BasePath": "_content/SistemaInventarioV6",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\productos\\5ab953b9-3c98-4d4e-9ead-7b19256dbedd.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\images\\productos\\db8b2505-450c-4f68-8b81-a18ab5397a60.jpg",
+      "SourceId": "SistemaInventarioV6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\",
+      "BasePath": "_content/SistemaInventarioV6",
+      "RelativePath": "images/productos/db8b2505-450c-4f68-8b81-a18ab5397a60.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\productos\\db8b2505-450c-4f68-8b81-a18ab5397a60.jpg"
     },
     {
       "Identity": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\images\\productos\\fef0fa30-0789-4d46-ae8f-824892c11010.jpg",

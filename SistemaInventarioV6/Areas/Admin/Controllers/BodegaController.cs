@@ -12,9 +12,10 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
         {
             _unidadTrabajo = unidadTrabajo;
         }
+        
         public IActionResult Index()
         {
-            return  View();
+            return View();
         }
 
         public async Task<IActionResult> Upsert(int? id)
@@ -22,14 +23,14 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
             Bodega bodega = new Bodega();
             if (id == null)
             {
-                return View(bodega);
+                return PartialView(bodega);
             }
             bodega = await _unidadTrabajo.Bodega.Obtener(id.GetValueOrDefault());
             if (bodega == null)
             {
                 return NotFound();
             }
-            return View(bodega);
+            return PartialView(bodega);
         }
 
         [HttpPost]
@@ -48,7 +49,7 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
                 await _unidadTrabajo.Guardar();
                 return RedirectToAction("Index");
             }
-            return View(bodega);
+            return PartialView(bodega);
         }
 
 

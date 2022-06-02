@@ -25,6 +25,7 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
         {
             ProductoVM productoVM = new ProductoVM()
             {
+                
                 Producto = new Producto(),
                 CategoriaLista = _unidadTrabajo.Categoria.ObtenerTodos().Result.Select
                 (s => new SelectListItem
@@ -38,7 +39,7 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
                     Text = s.Nombre,
                     Value = s.Id.ToString()
                 }),
-                PadreLista = _unidadTrabajo.Producto.ObtenerTodos().Result.Select(s => new SelectListItem { 
+                PadreLista =  _unidadTrabajo.Producto.ObtenerTodos().Result.Select(s => new SelectListItem { 
                     Text = s.Descripcion,
                     Value = s.Id.ToString()
                 })
@@ -107,19 +108,23 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             } else
             {
-                                
-                productoVM.CategoriaLista = _unidadTrabajo.Categoria.ObtenerTodos().Result.Select
+                
+                productoVM.CategoriaLista = _unidadTrabajo.Categoria.ObtenerTodos(f => f.Estado == true)
+                .Result.Select
                 (s => new SelectListItem
                 {
                     Text = s.Nombre,
                     Value = s.Id.ToString()
                 });
-                productoVM.MarcaLista = _unidadTrabajo.Marca.ObtenerTodos().Result.Select
-                (s => new SelectListItem
+
+                //para los casos select específicos no anda el.select hay que separarlo
+                var lstMarcas = await _unidadTrabajo.Marca.ObtenerTodos(f => f.Estado == true);
+                productoVM.MarcaLista = lstMarcas.Select(c => new SelectListItem
                 {
-                    Text = s.Nombre,
-                    Value = s.Id.ToString()
+                    Text = c.Nombre,
+                    Value = c.Id.ToString()
                 });
+                
                 productoVM.PadreLista = _unidadTrabajo.Producto.ObtenerTodos().Result.Select(s => new SelectListItem
                 {
                     Text = s.Descripcion,

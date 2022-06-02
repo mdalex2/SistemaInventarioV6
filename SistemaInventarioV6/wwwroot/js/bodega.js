@@ -3,6 +3,20 @@ $(document).ready(function () {
     loadDataTable();
 });
 
+$("#btnNew").click(function () {
+    $("#ventana_modal_body").load("/Admin/Bodega/Upsert", function () {
+        $("#ventana_modal").modal("show");
+        $("#ventana_modal_title").text("Bodega");
+    });
+});
+
+function Edit(urlUpsert) {
+    $("#ventana_modal_body").load(urlUpsert, function () {
+        $("#ventana_modal").modal("show");
+        $("#ventana_modal_title").text("Editar Bodega");
+    });
+}
+
 function loadDataTable() {
     dataTable = $("#tblDatos").DataTable({
         "ajax": {
@@ -27,7 +41,7 @@ function loadDataTable() {
                 "render": function (data) {
                     return `
                         <div class="text-center">
-                            <a href="/Admin/Bodega/Upsert/${data}" class="btn bg-gradient btn-primary text-white"><i class="fas fa-edit"></i></a>
+                            <a href="#" onclick=Edit("/Admin/Bodega/Upsert/${data}") class="btn bg-gradient btn-primary text-white"><i class="fas fa-edit"></i></a>
                             <a href="#" onclick=Delete("/Admin/Bodega/Delete/${data}") class="btn bg-gradient btn-danger text-white"><i class="fas fa-trash-alt"></i></a>
                         </div>
                     `;
