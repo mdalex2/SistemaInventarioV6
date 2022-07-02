@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj": {}
+    "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj": {
+    "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj",
         "projectName": "SistemaInventarioV6.AccesoDatos",
-        "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj",
-        "packagesPath": "C:\\Users\\Alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\obj\\",
+        "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj",
+        "packagesPath": "C:\\Users\\mdale\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -35,11 +34,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj"
               },
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
               }
             }
           }
@@ -82,26 +81,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
+    "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj",
         "projectName": "SistemaInventarioV6.Modelos",
-        "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj",
-        "packagesPath": "C:\\Users\\Alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\obj\\",
+        "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj",
+        "packagesPath": "C:\\Users\\mdale\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -117,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
               }
             }
           }
@@ -153,26 +151,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+    "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj",
         "projectName": "SistemaInventarioV6.Utilidades",
-        "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj",
-        "packagesPath": "C:\\Users\\Alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\obj\\",
+        "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj",
+        "packagesPath": "C:\\Users\\mdale\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -214,26 +211,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj": {
+    "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj",
+        "projectUniqueName": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj",
         "projectName": "SistemaInventarioV6",
-        "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj",
-        "packagesPath": "C:\\Users\\Alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\obj\\",
+        "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\SistemaInventarioV6.csproj",
+        "packagesPath": "C:\\Users\\mdale\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -249,14 +245,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.AccesoDatos\\SistemaInventarioV6.AccesoDatos.csproj"
               },
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Modelos\\SistemaInventarioV6.Modelos.csproj"
               },
-              "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Alexi\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
+              "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\mdale\\source\\repos\\SistemaInventarioV6\\SistemaInventarioV6.Utilidades\\SistemaInventarioV6.Utilidades.csproj"
               }
             }
           }
@@ -318,7 +314,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

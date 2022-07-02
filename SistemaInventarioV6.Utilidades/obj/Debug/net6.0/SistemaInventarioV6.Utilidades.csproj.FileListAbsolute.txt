@@ -10,3 +10,15 @@ C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\o
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\refint\SistemaInventarioV6.Utilidades.dll
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.pdb
 C:\Users\Alexi\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\ref\SistemaInventarioV6.Utilidades.dll
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\bin\Debug\net6.0\SistemaInventarioV6.Utilidades.deps.json
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\bin\Debug\net6.0\SistemaInventarioV6.Utilidades.dll
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\bin\Debug\net6.0\SistemaInventarioV6.Utilidades.pdb
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.csproj.AssemblyReference.cache
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.AssemblyInfoInputs.cache
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.AssemblyInfo.cs
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.dll
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\refint\SistemaInventarioV6.Utilidades.dll
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\SistemaInventarioV6.Utilidades.pdb
+C:\Users\mdale\source\repos\SistemaInventarioV6\SistemaInventarioV6.Utilidades\obj\Debug\net6.0\ref\SistemaInventarioV6.Utilidades.dll
