@@ -23,26 +23,31 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
 
         public async Task<IActionResult> Upsert(int? id)
         {
+            var prod = from p in await _unidadTrabajo.Producto.ObtenerTodos() select new {p.Descripcion};
+
+
             ProductoVM productoVM = new ProductoVM()
             {
                 
                 Producto = new Producto(),
-                CategoriaLista = _unidadTrabajo.Categoria.ObtenerTodos().Result.Select
-                (s => new SelectListItem
+                CategoriaLista = from s in await _unidadTrabajo.Categoria.ObtenerTodos() 
+                select  new SelectListItem
                 {
                     Text = s.Nombre,
                     Value = s.Id.ToString()
-                }),
-                MarcaLista = _unidadTrabajo.Marca.ObtenerTodos().Result.Select
-                (s => new SelectListItem
+                },
+                MarcaLista = from s in await _unidadTrabajo.Marca.ObtenerTodos() select
+                new SelectListItem
                 {
                     Text = s.Nombre,
                     Value = s.Id.ToString()
-                }),
-                PadreLista =  _unidadTrabajo.Producto.ObtenerTodos().Result.Select(s => new SelectListItem { 
+                },
+                PadreLista = from s in await  _unidadTrabajo.Producto.ObtenerTodos() 
+                select new SelectListItem 
+                { 
                     Text = s.Descripcion,
                     Value = s.Id.ToString()
-                })
+                }
             };
 
             if (id == null)
