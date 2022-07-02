@@ -14,5 +14,6 @@ namespace SistemaInventarioV6.AccesoDatos.Data
         public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Marca> Marcas { get; set; }
         public virtual DbSet<Producto> Productos { get; set; }
+        public virtual DbSet<UsuarioAplicacion> UsuarioAplicacion { get; set; }
     }
 }
